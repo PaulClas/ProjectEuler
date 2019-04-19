@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\paulc\source\repos\problem6\problem6\main.cpp(32): warning C4244: '=': conversion from 'long double' to '__int64', possible loss of data
+  Problem6.vcxproj -> C:\Users\paulc\source\repos\Problem6\Debug\Problem6.exe
+  Problem6.vcxproj -> C:\Users\paulc\source\repos\Problem6\Debug\Problem6.pdb (Partial PDB)
