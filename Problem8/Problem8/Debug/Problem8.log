@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\user\documents\projecteuler\problem8\problem8\main.cpp(26): warning C4018: '<' : incompatibilité signed/unsigned
+c:\users\user\documents\projecteuler\problem8\problem8\main.cpp(45): warning C4018: '<' : incompatibilité signed/unsigned
+  Problem8.vcxproj -> C:\Users\User\Documents\ProjectEuler\Problem8\Debug\Problem8.exe
