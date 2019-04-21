@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\user\documents\projecteuler\problem9\problem9\main.cpp(39): warning C4244: '=' : conversion de 'double' en 'int', perte possible de données
+  Problem9.vcxproj -> C:\Users\User\Documents\ProjectEuler\Problem9\Debug\Problem9.exe
