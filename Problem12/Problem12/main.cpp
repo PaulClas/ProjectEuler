@@ -25,10 +25,16 @@ What is the value of the first triangle number to have over five hundred divisor
 #include <iostream>
 #include <cmath>
 #include <string>
+#include <chrono>
 
 using namespace std;
 
 int main() {
+	auto start = chrono::steady_clock::now();
 
+
+	auto end = chrono::steady_clock::now();
+	auto diff = end - start;
+	cout << chrono::duration <double, milli>(diff).count() << " ms" << endl;
 	return 0;
 }
