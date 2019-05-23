@@ -26,15 +26,63 @@ What is the value of the first triangle number to have over five hundred divisor
 #include <cmath>
 #include <string>
 #include <chrono>
+#include <vector>
 
 using namespace std;
 
 int main() {
+	//auto start = chrono::steady_clock::now();
+	long long n, result;
+	string answer;
+	//Formula  is Xn = n(n+1)/2
+	/*bool estFini = false;
+	while (estFini == false) {
+		cout << "Enter the number of dots for which you would like to know the triangle number: " << endl;
+		cin >> n;
+		auto start = chrono::steady_clock::now();
+		result = n * (n + 1) / 2;
+		auto end = chrono::steady_clock::now();
+		auto diff = end - start;
+		cout << "The triangle number of " << n << " is " << result << " ." << endl;
+		cout << chrono::duration <double, milli>(diff).count() << " ms" << endl;
+		cout << " Are you done ? y/n" << endl;
+		cin >> answer;
+		if (answer == "y")
+			estFini = true;
+	}*/
+	// Solving the problem of divisors
 	auto start = chrono::steady_clock::now();
+	bool IsSolution = false;
+	n = 12300;
+	vector <int> divisors;
+	long int triangleNumb;
+	long int numberOfDivisors =0;
+	while (IsSolution == false) {
+		triangleNumb = n * (n + 1) / 2;
+		for (int i = 1; i <= triangleNumb; i++) {
+			if (triangleNumb % i == 0) {
+				//divisors.push_back(i);
+				numberOfDivisors++;
+			}
+		}
+		//cout << triangleNumb << " " << numberOfDivisors << endl;
+		if (numberOfDivisors > 500) {
+			cout << "The solution is: " << triangleNumb << endl;
+			IsSolution = true;
+		}
+		else {
+			n++;
+			numberOfDivisors = 0;
+		}
+		
 
-
+	}
 	auto end = chrono::steady_clock::now();
 	auto diff = end - start;
 	cout << chrono::duration <double, milli>(diff).count() << " ms" << endl;
+
+
+
+	system("Pause");
 	return 0;
 }
